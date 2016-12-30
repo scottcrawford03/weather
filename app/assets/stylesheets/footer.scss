@@ -1,0 +1,16 @@
+.footer {
+  border-top: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited:hover:active {
+    text-decoration: none;
+    color: black;
+  }
+}

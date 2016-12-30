@@ -1,0 +1,8 @@
+<div class="weather">
+  <% if Rails.cache.read("number_of_calls_for_today") > 1000 %>
+    <h1><%= "Looks like you've reached your DarkSky Limit. Come back tomorrow!" %></h1>
+  <% else %>
+    <h1><%= "you've made #{Rails.cache.read("number_of_calls_for_today")} calls today" %></h1>
+    <h1><%= "The weather in #{@location} is currently #{@weather}" %></h1>
+  <% end %>
+</div>
